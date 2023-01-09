@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vinarija Šaško</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+</head>
+<style>
+    * { 
+        margin: 0; 
+        padding: 0; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif
+
+    } 
+    header {
+        background-position: fixed;
+        background-repeat: no-repeat;
+        height: 250px;
+        background-size:cover;
+        background-image: url("https://images.pexels.com/photos/1277181/pexels-photo-1277181.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    }
+    header h1 {
+        text-align: center;
+        padding: 20% 0 0 0;
+        color:#0e37bd;
+
+    }
+    
+    @media only screen and  (min-width: 700px) { 
+        header {
+            background-image: url("https://images.pexels.com/photos/1277181/pexels-photo-1277181.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            height: 330px;
+        }
+    }
+    @media only screen  { 
+        header {
+            background-position: center;
+            background-image: url("https://images.pexels.com/photos/1277181/pexels-photo-1277181.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            height: 100vh;
+        }
+        header h1 {
+            font-size: 30px;
+        }
+    }
+   
+    main {
+        padding: 20px 10px;
+    }
+    h1 {
+        font-size: 22px;
+        margin: 10px 0;
+        color: black
+    }
+    h2 {
+        font-size: 26px;
+        margin: 10px 0;
+    }
+    p {
+        font-size: 13px;
+        line-height: 24px;
+    }
+    span {
+        color: #407a21;
+        font-weight: bold;
+    }
+    nav ul {
+         list-style: none; 
+    }
+    @media (min-width: 480px) { 
+        nav ul {
+             display: flex; 
+        } 
+        nav li {
+             flex: 1 1 auto; 
+        }
+        h1 {
+            font-size: 32px;
+        }
+    }
+
+    nav a { 
+        color: black; 
+        background: greenyellow; 
+        font-weight: bold; 
+        display: block; 
+        padding: 15px; 
+        font-size: 15px; 
+        text-decoration: saddlebrowns; 
+        text-align: center; 
+    } 
+    nav a:hover { 
+        background: rgb(11, 203, 62); 
+    } 
+    @media only screen and (min-width: 768px) {
+         nav a { 
+            font-size: 20px; 
+        }
+    }
+    section { display: grid; grid-template-columns: 99%; }
+    
+    div {
+        margin: 10px;
+        padding: 10px 5px;
+        border: 1px solid red;
+        box-shadow: 0 2px 3px 1px black;
+        
+    }
+    @media only screen and (min-width: 480px) {
+        section { 
+            grid-template-columns: 50% 50%;
+        }
+    }
+    @media only screen and (min-width: 900px) {
+        section { 
+            grid-template-columns: 33% 33% 33%;
+        }
+    }
+    @media only screen and (min-width: 1200px) {
+        section { 
+            grid-template-columns: 20% 20% 20% 20%;
+        }
+    }
+    
+    div img {
+        width: 100%;
+        height: 70%;
+    }
+    .price {
+        margin: 20px 0 10px 0;
+        color:black;
+    }
+    footer {
+        background-color: black;
+        padding: 10px 0;
+        margin-top: 10px;
+        text-align: center;
+        color: red
+    }
+</style>
+<body>
+    <header>
+        <h1>Vinarija Šaško</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Index.html">Naslovna</a></li>
+            <li><a href="Vina.html">Vina</a></li>
+            <li><a href="O-nama.html">O nama</a></li>
+            <li><a href="Galerija.html">Galerija </a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Vina- najbolji dodatak jelima i događajima</h1>
+		<figure>
+			<img src="https://thumbs.dreamstime.com/b/barrel-wineglasses-bottle-vineyard-barrel-wineglasses-bottle-vineyard-sunset-158509624.jpg" width="85%">
+			
+		</figure>
+        <br>
+        <br>
+		<p>Vinograd je biljka iz porodice Vitis, a vino se proizvodi od grožđa koje se dobije sa vinograda.</p>
+		<p>Postoji više vrsta vinograda, a odabir određene vrste ovisi o klimatskim uvjetima i tlu u kojem se gaji.</p>
+		<p>Vino se može proizvoditi od različitih sorti grožđa, a neke od najpoznatijih na našim područjima su: Cabernet Sauvignon, Graševina, Merlot, Škrlet i Sauvignon Blanc.</p>
+		<p>Vinogradi se obično gaje u obliku grma ili loze, a grožđe se bere ručno ili mehanički.
+            Briga o vinogradu je važan dio procesa proizvodnje vina i uključuje aktivnosti poput prorjeđivanja i obrezivanja loze.</p>
+		<p>Vino se može kategorizirati prema boji (crveno, bijelo ili rosé), kakvoći (stolno ili desertno) i vrsti grožđa od kojeg je proizvedeno.</p>
+		<p>Vino se može konzumirati svježe ili biti ostarelo, što utječe na njegov okus i aromu.
+            Tijekom procesa proizvodnje, vino se može odležavati u drvenim bačvama ili bočicama od stakla, a odležavanje može trajati od nekoliko mjeseci do nekoliko godina.</p>
+		<p>Vino se može konzumirati samostalno ili se može kombinirati s hranom, a postoje mnoge vrste vina koja se savršeno slažu s određenim jelima.</p>
+        <a href="https://www.jutarnji.hr/dobrahrana/naucite-spariti-hranu-i-vino-3536321">Kako spariti vino s jelom</a>
+		<p>Postoje mnoge regije u svijetu poznate po proizvodnji vina, uključujući Francusku, talijansku, španjolsku i američku.</p>
+        <p>Vino se može proizvoditi od različitih sorti grožđa, ali također se može proizvoditi od drugih plodova poput jabuka, borovnica ili smokava.</p>
+        <p>Staro vino je skuplje od svježeg vina, a cijena se obično temelji na njegovoj rijetkosti i kvaliteti.</p>
+        <p><b>Vino ima mnoge zdravstvene koristi, uključujući smanjenje rizika od srčanih bolesti i određenih tipova raka. Međutim, važno je piti umjereno jer prekomjerno konzumiranje vina može dovesti do ovisnosti i drugih zdravstvenih problema.</b></p>
+        <p>Vino se može konzumirati na različite načine - u malim gutljajima tijekom večere ili u većim količinama na proslavama i društvenim okupljanjima. Neki ljudi vole piti vino uz hranu, dok drugi vole uživati ​​u njemu samostalno kao užitak.</p>
+    </main>
+    <footer>
+        All rights reserved &copy; Karlo Šaško
+        <a href="https://github.com/" target="_blank"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height: 20px; width: auto;" title="Github" alt="Github"></a>
+    </footer>
+</body>
+</html>

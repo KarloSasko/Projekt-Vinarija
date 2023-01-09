@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vinarija Šaško</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+</head>
+<style>
+    * { 
+        margin: 0; 
+        padding: 0; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif
+
+    } 
+    header {
+        background-position: fixed;
+        background-repeat: no-repeat;
+        height: 250px;
+        background-size:cover;
+        background-image: url("https://images.pexels.com/photos/1277181/pexels-photo-1277181.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    }
+    header h1 {
+        text-align: center;
+        padding: 20% 0 0 0;
+        color:#0e37bd;
+
+    }
+    
+    @media only screen and  (min-width: 700px) { 
+        header {
+            background-image: url("https://images.pexels.com/photos/1277181/pexels-photo-1277181.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            height: 330px;
+        }
+    }
+    @media only screen  { 
+        header {
+            background-position: center;
+            background-image: url("https://images.pexels.com/photos/1277181/pexels-photo-1277181.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            height: 100vh;
+        }
+        header h1 {
+            font-size: 30px;
+        }
+    }
+   
+    main {
+        padding: 20px 10px;
+    }
+    h1 {
+        font-size: 22px;
+        margin: 10px 0;
+        color: black
+    }
+    h2 {
+        font-size: 26px;
+        margin: 10px 0;
+    }
+    p {
+        font-size: 13px;
+        line-height: 24px;
+    }
+    span {
+        color: #407a21;
+        font-weight: bold;
+    }
+    nav ul {
+         list-style: none; 
+    }
+    @media (min-width: 480px) { 
+        nav ul {
+             display: flex; 
+        } 
+        nav li {
+             flex: 1 1 auto; 
+        }
+        h1 {
+            font-size: 32px;
+        }
+    }
+
+    nav a { 
+        color: black; 
+        background: greenyellow; 
+        font-weight: bold; 
+        display: block; 
+        padding: 15px; 
+        font-size: 15px; 
+        text-decoration: saddlebrowns; 
+        text-align: center; 
+    } 
+    nav a:hover { 
+        background: rgb(11, 203, 62); 
+    } 
+    @media only screen and (min-width: 768px) {
+         nav a { 
+            font-size: 20px; 
+        }
+    }
+    section { display: grid; grid-template-columns: 99%; }
+    
+    div {
+        margin: 10px;
+        padding: 10px 5px;
+        border: none;
+        box-shadow: none;
+        
+    }
+    @media only screen and (min-width: 480px) {
+        section { 
+            grid-template-columns: 50% 50%;
+        }
+    }
+    @media only screen and (min-width: 900px) {
+        section { 
+            grid-template-columns: 33% 33% 33%;
+        }
+    }
+    @media only screen and (min-width: 1200px) {
+        section { 
+            grid-template-columns: 20% 20% 20% 20%;
+        }
+    }
+    
+    div img {
+        width: 100%;
+        height: 70%;
+    }
+    .price {
+        margin: 30px 0 10px 0;
+    }
+    footer {
+        background-color: black;
+        padding: 10px 0;
+        margin-top: 10px;
+        text-align: center;
+        color: red
+    }
+</style>
+<body>
+    <header>
+        <h1>Vinarija Šaško</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Index.html">Naslovna</a></li>
+            <li><a href="vina.html">Vina</a></li>
+            <li><a href="O-nama.html">O nama</a></li>
+            <li><a href="Galerija.html">Galerija </a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Informacije za kontakt</h1>
+		<div id="contact">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92062.73307779686!2d16.65497070647192!3d45.5290174974342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4766feee2a9ba415%3A0x32c9bb78d035e9c2!2sVoloder!5e0!3m2!1sen!2shr!4v1673279342350!5m2!1sen!2shr" width= 100% height="450" ></iframe>
+				</div>
+                <div id="form"	>
+                <label for="fname">Ime *</label>
+				<input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                <br>
+
+				<label for="lname">Prezime *</label>
+				<input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                <br>
+				
+				<label for="lname">Email adresa *</label>
+				<input type="email" id="email" name="email" placeholder="Your e-mail.." required>
+                <br>
+				<label for="country">Zemlja</label>
+				<select id="country" name="Zemlja">
+				  <option value="">Please select</option>
+				  <option value="SER">Srbija</option>
+				  <option value="HR" selected>Hrvatska</option>
+				  <option value="BiH">Bosna i Hercegovina</option>
+				  <option value="HU">Mađarska</option>
+                  <option value="SLO">Slovenija</option>
+				</select>
+                <br>
+                <p>Koje vino više volite?</p>
+                <input type="radio" id="html" name="fav_wine" value="HTML">
+                <label for="html">Crno vino</label><br>
+                <input type="radio" id="css" name="fav_wine" value="CSS">
+                <label for="css">Bijelo vino</label><br>
+                
+                <br>
+
+				<label for="subject">Upit:</label>
+                <br>
+				<textarea id="subject" name="subject" placeholder="Što vas zanima?" style="height:200px"></textarea>
+                <br>
+				<input type="submit" value="Pošalji svoj upit.">
+			</form>
+		</div>
+        
+    </main>
+    <footer>
+        All rights reserved &copy; Karlo Šaško
+        <a href="https://github.com/" target="_blank"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height: 20px; width: auto;" title="Github" alt="Github"></a>
+    </footer>
+</body>
+</html>

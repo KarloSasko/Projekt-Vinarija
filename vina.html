@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vinarija Šaško</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+</head>
+<style>
+    * { 
+        margin: 0; 
+        padding: 0; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif
+
+    } 
+    header {
+        background-position: fixed;
+        background-repeat: no-repeat;
+        height: 250px;
+        background-size:cover;
+        background-image: url("https://images.pexels.com/photos/1277181/pexels-photo-1277181.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    }
+    header h1 {
+        text-align: center;
+        padding: 20% 0 0 0;
+        color:#0e37bd;
+
+    }
+    
+    @media only screen and  (min-width: 700px) { 
+        header {
+            background-image: url("https://images.pexels.com/photos/1277181/pexels-photo-1277181.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            height: 330px;
+        }
+    }
+    @media only screen  { 
+        header {
+            background-position: center;
+            background-image: url("https://images.pexels.com/photos/1277181/pexels-photo-1277181.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            height: 100vh;
+        }
+        header h1 {
+            font-size: 30px;
+        }
+    }
+   
+    main {
+        padding: 20px 10px;
+    }
+    h1 {
+        font-size: 22px;
+        margin: 10px 0;
+        color: black
+    }
+    h2 {
+        font-size: 26px;
+        margin: 10px 0;
+    }
+    p {
+        font-size: 13px;
+        line-height: 24px;
+    }
+    span {
+        color: #407a21;
+        font-weight: bold;
+    }
+    nav ul {
+         list-style: none; 
+    }
+    @media (min-width: 480px) { 
+        nav ul {
+             display: flex; 
+        } 
+        nav li {
+             flex: 1 1 auto; 
+        }
+        h1 {
+            font-size: 32px;
+        }
+    }
+
+    nav a { 
+        color: black; 
+        background: greenyellow; 
+        font-weight: bold; 
+        display: block; 
+        padding: 15px; 
+        font-size: 15px; 
+        text-decoration: saddlebrowns; 
+        text-align: center; 
+    } 
+    nav a:hover { 
+        background: rgb(11, 203, 62); 
+    } 
+    @media only screen and (min-width: 768px) {
+         nav a { 
+            font-size: 20px; 
+        }
+    }
+    section { display: grid; grid-template-columns: 99%; }
+    
+    div {
+        margin: 10px;
+        padding: 10px 5px;
+        border: 1px solid red;
+        box-shadow: 0 2px 3px 1px black;
+        
+    }
+    @media only screen and (min-width: 480px) {
+        section { 
+            grid-template-columns: 50% 50%;
+        }
+    }
+    @media only screen and (min-width: 900px) {
+        section { 
+            grid-template-columns: 33% 33% 33%;
+        }
+    }
+    @media only screen and (min-width: 1200px) {
+        section { 
+            grid-template-columns: 20% 20% 20% 20%;
+        }
+    }
+    
+    div img {
+        width: 100%;
+        height: 70%;
+    }
+    .price {
+        margin: 20px 0 10px 0;
+        color:black;
+    }
+    footer {
+        background-color: black;
+        padding: 10px 0;
+        margin-top: 10px;
+        text-align: center;
+        color: red
+    }
+</style>
+<body>
+    <header>
+        <h1>Vinarija Šaško</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Index.html">Naslovna</a></li>
+            <li><a href="vina.html">Vina</a></li>
+            <li><a href="O-nama.html">O nama</a></li>
+            <li><a href="Galerija.html">Galerija </a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Naša vina</h1>
+        <section>
+            <div>
+                <figure id="Graševina">
+                    <img src="https://cdn.shopify.com/s/files/1/0574/3571/7798/products/KUTJEVO_GRASEVINA0_75L_VRHUNSKO_SLAVONIJA_caf215ea-56bf-4b8b-98eb-195366301826.png?v=1659383758" alt="Graševina" title="Graševina">
+                </figure>
+                <h2>Graševina</h2>
+                <p>Ako vaša nepca žude za rajskim okusima ove sorte vina onda je ovo najbolja solucija za vas.</p>
+                <p class="price"><span>Cijena:</span> 19,00 &euro;</p>
+            </div>
+            <div>
+                <figure id="Škrlet">
+                    <img src="http://vinarija-miksa.hr/wp-content/uploads/2018/07/%C5%A1krlet-100-gold.png" alt="Škrlet" title="Škrlet">
+                </figure>
+                <h2>Škrlet</h2>
+                <p>Uvijek odlična opcija koja ide uz svako jelo.</p>
+                <p class="price"><span>Cijena:</span> 21,49 &euro;</p>
+            </div>
+            <div>
+                <figure id="Sauvignon cabernet">
+                    <img src="https://lumaekskluziv.hr/wp-content/uploads/2018/11/DEKLI%C4%86-CABERNET-SAUVIGNON.jpg" alt="Sauvignon cabernet" title="Sauvignon cabernet">
+                </figure>
+                <h2>Sauvignon cabernet</h2>
+                <p>Crno vino za koje će vaši gosti reći da je najbolje koje su ikada probali.</p>
+                <p class="price"><span>Cijena:</span> 24,99 &euro;</p>
+            </div>
+            <div>
+                <figure id="Moslavac">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Predikatno_vino_Moslavac%2C_kasna_berba.jpg/1200px-Predikatno_vino_Moslavac%2C_kasna_berba.jpg" height= 60% alt="Moslavac" title="Moslavac">
+                </figure>
+                <h2>Moslavac </h2>
+                <p> Autohtono bijelo vino sorte koja se može naći samo na ovim područjima u cijeloj Hrvatskoj</p>
+                <p class="price"><span>Cijena:</span> 27,99 &euro;</p>
+            </div>
+        </section>
+        <img src="https://www.grafocentar.hr/slike/velike/etiketa-naljepnica-zabranjena-prodaja-al-72735-1_1.jpg">
+    </main>
+    <footer>
+        All rights reserved &copy; Karlo Šaško
+        <a href="https://github.com/" target="_blank"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height: 20px; width: auto;" title="Github" alt="Github"></a>
+    </footer>
+</body>
+</html>
